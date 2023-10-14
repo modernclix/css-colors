@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Crayones CSS</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <img class="header-img" src="./assets/Leonardo_Diffusion_a_world_of_colors_0.jpg" alt="un mundo de colores">
+            <h1>Colores CSS</h1>
+        </header>
+        <nav id="nav"><ul>
+            <a href="#rgb"><li>RGB</li></a>
+            <a href="#rueda"><li>Rueda de Colores</li></a>
+            <a href="#complementarios"><li>Colores Complementarios</li></a>
+            <a href="#hex"><li>HEX</li></a>
+            <a href="#hsl"><li>HSL</li></a>
+            <a href="#gradientes"><li>GRADIENTES</li></a>
+            <a href="#opacidad"><li>OPACIDAD</li></a>
+            <a href="#alpha"><li>ALPHA</li></a>
+            <a href="#sombras"><li>SOMBRAS</li></a>
+        </ul></nav>
+        <h2 id="rgb">Colores RGB</h2>
+        <h3>Primarios</h3>
+        <div class="container">
+            <div class="marker red">
+                <div class="cap"></div>
+                <div class="sleeve"></div>
+            </div>
+            <p class="label">RGB: Rojo puro</p>
+            <div class="marker green">
+                <div class="cap"></div>
+                <div class="sleeve"></div>
+            </div>
+            <p class="label">RGB: Verde puro</p>            
+            <div class="marker blue">
+                <div class="cap"></div>
+                <div class="sleeve"></div>
+            </div>
+            <p class="label">RGB: Azul puro</p>
+        </div>
+        <h3>Secundarios - Mezcla de dos colores primarios</h3>
+        <div class="container">
+            <div class="marker yellow">
+                <div class="cap"></div>
+                <div class="sleeve"></div>
+            </div>
+            <p class="label">RGB: Amarillo - Mezcla de rojo y verde.</p>
+            <div class="marker magenta">
+                <div class="cap"></div>
+                <div class="sleeve"></div>
+            </div>
+            <p class="label">RGB: Magenta - Mezcla de rojo y azul.</p>            
+            <div class="marker cian">
+                <div class="cap"></div>
+                <div class="sleeve"></div>
+            </div>
+            <p class="label">RGB: Cian - Mezcla de verde y azul.</p>
+        </div>
+        <h3>Terciarios - Mezcla de un color primario y un color secundario cercano</h3>
+        <div class="container">
+            <div class="marker orange">
+                <div class="cap"></div>
+                <div class="sleeve"></div>
+            </div>
+            <p class="label">RGB: Naranja - Mezcla de rojo y amarillo</p>
+            <div class="marker lime">
+                <div class="cap"></div>
+                <div class="sleeve"></div>
+            </div>
+            <p class="label">RGB: Verde Lima - Mezcla de verde y amarillo</p>            
+            <div class="marker violet">
+                <div class="cap"></div>
+                <div class="sleeve"></div>
+            </div>
+            <p class="label">RGB: Violeta - Mezcla de azul y magenta.</p>
+        </div>
+        <div class="arrow-container">
+            <a href="#nav">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                    <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm.53 5.47a.75.75 0 00-1.06 0l-3 3a.75.75 0 101.06 1.06l1.72-1.72v5.69a.75.75 0 001.5 0v-5.69l1.72 1.72a.75.75 0 101.06-1.06l-3-3z" clip-rule="evenodd" />
+                </svg>
+            </a>
+        </div>
+        <hr>
+        <h2>Rueda de colores y colores complementarios</h2>
+        <h3 id="rueda">Rueda de Colores</h3>
+        <div class="img-container">
+            <a href="https://blog.leatheredgepaint.com/hs-fs/hubfs/THE_COLORS_WHEEL.jpg?width=1540&name=THE_COLORS_WHEEL.jpg">
+                <img class="color-wheel" src="https://blog.leatheredgepaint.com/hs-fs/hubfs/THE_COLORS_WHEEL.jpg?width=1540&name=THE_COLORS_WHEEL.jpg" alt="Rueda de colores">
+            </a>
+        </div>
+        <h3 id="complementarios">Colores Complementarios</h3>
+        <div class="container">
+            <div class="side-by-side">
+                <div class="marker red">
+                    <p class="text-cian">COMPLEMENTARIO</p>
+                </div>
+                <div class="marker cian">
+                    <p class="text-red">COMPLEMENTARIO</p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="side-by-side">
+                <div class="marker green">
+                    <p class="text-magenta">COMPLEMENTARIO</p>
+                </div>
+                <div class="marker magenta">
+                    <p class="text-green">COMPLEMENTARIO</p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="side-by-side">
+                <div class="marker blue">
+                    <p class="text-yellow">COMPLEMENTARIO</p>
+                </div>
+                <div class="marker yellow">
+                    <p class="text-blue">COMPLEMENTARIO</p>
+                </div>
+            </div>
+        </div>
+        <div class="arrow-container">
+            <a href="#nav">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                    <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm.53 5.47a.75.75 0 00-1.06 0l-3 3a.75.75 0 101.06 1.06l1.72-1.72v5.69a.75.75 0 001.5 0v-5.69l1.72 1.72a.75.75 0 101.06-1.06l-3-3z" clip-rule="evenodd" />
+                </svg>
+            </a>
+        </div>
+        <hr>
+        <h2>Hexadecimal (Hex) y HSL. Más Formas de Representar Colores</h2>
+        <h3 id="hex">HEX - Algunos Colores interesantes</h3>
+        <div class="container">
+            <div class="marker aliceBlue">
+                <div class="cap"></div>
+                <div class="sleeve"></div>
+            </div>
+            <p class="label">Hex: Alice Blue</p>
+            <div class="marker coral">
+                <div class="cap"></div>
+                <div class="sleeve"></div>
+            </div>
+            <p class="label">Hex: Coral</p>            
+            <div class="marker fireBrick">
+                <div class="cap"></div>
+                <div class="sleeve"></div>
+            </div>
+            <p class="label">Hex: Fire Brick</p>
+            <div class="marker hotPink">
+                <div class="cap"></div>
+                <div class="sleeve"></div>
+            </div>
+            <p class="label">Hex: Hot Pink</p>
+            <div class="marker lemonChiffon">
+                <div class="cap"></div>
+                <div class="sleeve"></div>
+            </div>
+            <p class="label">Hex: Lemon Chiffon</p>
+        </div>
+        <div class="arrow-container">
+            <a href="#nav">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                    <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm.53 5.47a.75.75 0 00-1.06 0l-3 3a.75.75 0 101.06 1.06l1.72-1.72v5.69a.75.75 0 001.5 0v-5.69l1.72 1.72a.75.75 0 101.06-1.06l-3-3z" clip-rule="evenodd" />
+                </svg>
+            </a>
+        </div>
+        <hr>
+        <h2 id="hsl">HSL - Variando la saturación y la iluminación</h2>
+        <h3>Variando la saturación del Azul</h3>
+        <div class="container">
+            <div class="marker blue15">
+                <div class="cap"></div>
+                <div class="sleeve"></div>
+            </div>
+            <p class="label">HSL: Azul al 15% de Saturación</p>
+            <div class="marker blue35">
+                <div class="cap"></div>
+                <div class="sleeve"></div>
+            </div>
+            <p class="label">HSL: Azul al 35% de Saturación</p>
+            <div class="marker blue70">
+                <div class="cap"></div>
+                <div class="sleeve"></div>
+            </div>
+            <p class="label">HSL: Azul al 70% de Saturación</p>
+        </div>
+        <h3>Variando la iluminación del Amarillo</h3>
+        <div class="container">
+            <div class="marker yellow10">
+                <div class="cap"></div>
+                <div class="sleeve"></div>
+            </div>
+            <p class="label">HSL: Amarillo al 10% de Iluminación</p>
+            <div class="marker yellow40">
+                <div class="cap"></div>
+                <div class="sleeve"></div>
+            </div>
+            <p class="label">HSL: Amarillo al 40% de Iluminación</p>
+            <div class="marker yellow80">
+                <div class="cap"></div>
+                <div class="sleeve"></div>
+            </div>
+            <p class="label">HSL: Amarillo al 80% de Iluminación</p>
+        </div>
+        <div class="arrow-container">
+            <a href="#nav">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                    <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm.53 5.47a.75.75 0 00-1.06 0l-3 3a.75.75 0 101.06 1.06l1.72-1.72v5.69a.75.75 0 001.5 0v-5.69l1.72 1.72a.75.75 0 101.06-1.06l-3-3z" clip-rule="evenodd" />
+                </svg>
+            </a>
+        </div>
+        <hr>
+        <h2 id="gradientes">Gradientes: la transición de color</h2>
+        <h3>Gradiente lineal</h3>
+        <div class="container">
+            <div class="square linearGradientRtoB"></div>
+        </div>
+        <p class="label">De rojo a azul de izquierda a derecha</p>
+        <div class="container">
+            <div class="square linearGradientGtoYtoL"></div>
+        </div>
+        <p class="label">Verde a Amarillo con un ángulo de 45º y un color stop al 40% y luego pasa a Verde Lima</p>
+        <h3>Gradiente radial</h3>
+        <div class="container">
+            <div class="circle radialGradientVtoB"></div>
+        </div>
+        <p class="label">Desde el centro hacia afuera, Violeta a Negro</p>
+        <div class="arrow-container">
+            <a href="#nav">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                    <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm.53 5.47a.75.75 0 00-1.06 0l-3 3a.75.75 0 101.06 1.06l1.72-1.72v5.69a.75.75 0 001.5 0v-5.69l1.72 1.72a.75.75 0 101.06-1.06l-3-3z" clip-rule="evenodd" />
+                </svg>
+            </a>
+        </div>
+        <hr>        
+        <h2>Opacidad y Canal Alfa</h2>
+        <div id="opacidad" class="container">
+            <div class="side-by-side">
+                <div class="marker opacity02">
+                    <p class="opacity-text">Opacidad 0.2</p>
+                </div>
+                <div class="marker opacity07">
+                    <p class="opacity-text">Opacidad 0.7</p>
+                </div>
+            </div>
+            <p class="label">Fondo negro con variaciones de Opacidad.</p>
+        </div>
+        <div id="alpha" class="container">
+            <div class="side-by-side">
+                <div class="marker alpha04">
+                    <p class="alpha-text">rgba(255, 127, 0, 0.4)</p>
+                </div>
+                <div class="marker alpha08">
+                    <p class="alpha-text">rgba(255, 127, 0, 0.8)</p>
+                </div>
+            </div>
+            <p class="label">Fondo Naranja con variaciones de Alpha Channel.</p>
+        </div>
+        <h2 id="sombras">Sombras</h2>
+        <div class="container">
+            <div class="square shadow"></div>
+        </div>
+        <p class="label">Sombra con desplazamiento, una borrosidad, una expansión y semitransparente para dar una apariencia tridimensional.</p>
+        <div class="arrow-container">
+            <a href="#nav">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                    <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm.53 5.47a.75.75 0 00-1.06 0l-3 3a.75.75 0 101.06 1.06l1.72-1.72v5.69a.75.75 0 001.5 0v-5.69l1.72 1.72a.75.75 0 101.06-1.06l-3-3z" clip-rule="evenodd" />
+                </svg>
+            </a>
+        </div>
+        <hr>
+        <footer>
+            <p class="credits">Made for educational purposes by Modern Clix - <a href="https://modernclixdev.blogspot.com" target="_blank">Visit our website</a></p>
+        </footer>
+    </body>
+</html>

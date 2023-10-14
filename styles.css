@@ -1,0 +1,321 @@
+body {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header h1 {
+    margin-left: 25px;
+    font-size: 50px;
+}
+
+.header-img {
+    width: 150px;
+    border-radius: 30px;
+}
+
+h1, h2, h3, h4 {
+    text-align: center;
+}
+
+h2 {
+    margin-top: 50px;
+}
+
+h3 {
+    margin-bottom: 5px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 70%;
+    text-align: center;
+    padding: 8px;
+}
+
+li {
+    text-decoration: none;
+    list-style: none;
+    padding: 8px;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    transition: all 0.3s ease-in;
+    position: relative;
+}
+
+a:hover {
+    color: rgb(148, 0, 255);
+    top: -2px;
+}
+
+
+.container {
+    background-color: rgb(255, 255, 255);
+    padding: 10px 0;
+}
+
+.marker {
+    width: 200px;
+    height: 25px;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+.cap {
+    width: 60px;
+    height: 25px;
+}
+
+.sleeve {
+    width: 110px;
+    height: 25px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-left: 10px double rgba(0, 0, 0, 0.75);
+}
+
+.cap, .sleeve {
+    display: inline-block;
+}
+
+.label {
+    text-align: center;
+    margin-top: 3px;
+    margin-bottom: 30px;
+}
+
+/* RGB: Rojo puro */
+.red {
+    background-color: rgb(255, 0, 0);
+}
+
+/* RGB: Verde puro */
+.green {
+    background-color: rgb(0, 255, 0);
+}
+
+/* RGB: Azul puro */
+.blue {
+    background-color: rgb(0, 0, 255);
+}
+
+/* RGB: Mezcla de rojo y verde para obtener amarillo */
+.yellow {
+    background-color: rgb(255, 255, 0);
+}
+
+/* RGB: Mezcla de rojo y azul para obtener Magenta */
+
+.magenta {
+    background-color: rgb(255, 0, 255);
+}
+
+/* RGB: Mezcla de verde y azul para obtener Cian */
+.cian {
+    background-color: rgb(0, 255, 255);
+}
+
+.orange {
+    background-color: rgb(255, 128, 0);
+}
+
+.lime {
+    background-color: rgb(127,255,0);
+}
+
+.violet {
+    background-color: rgb(148, 0, 255);
+}
+
+.arrow-container {
+    width: 80%;
+    display: flex;
+    justify-content: end;
+}
+svg {
+    width: 30px;
+    height: 30px;
+}
+
+hr {
+    width: 80%;
+
+}
+
+.img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.color-wheel {
+    width: 600px;
+    height: auto;
+}
+
+#complementarios {
+    margin-top: 50px;
+}
+
+.side-by-side {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.side-by-side .marker {
+    margin: 10px 0;
+    height: fit-content ;
+}
+
+.text-cian {
+    color: rgb(0, 255, 255);
+}
+
+.text-red {
+    color: rgb(255, 0, 0);
+}
+
+.text-green {
+    color: rgb(0, 255, 0);
+}
+
+.text-magenta {
+    color: rgb(255, 0, 255);
+}
+
+.text-blue {
+    color: rgb(0, 0, 255);
+}
+
+.text-yellow {
+    color: rgb(255, 255, 0);
+}
+
+.text-cian, .text-red, .text-green, .text-magenta, .text-blue, .text-yellow {
+    text-align: center;
+    font-weight: bold;
+}
+
+.aliceBlue {
+    background-color: #F0F8FF;
+}
+
+.coral {
+    background-color: #FF7F50;
+}
+
+.fireBrick {
+    background-color: #B22222;
+}
+
+.hotPink {
+    background-color: #FF69B4;
+}
+
+.lemonChiffon {
+    background-color: #FFFACD;
+}
+
+.blue15 {
+    background-color: hsl(240, 15%, 50%);
+}
+
+.blue35 {
+    background-color: hsl(240, 35%, 50%);
+}
+
+.blue70 {
+    background-color: hsl(240, 70%, 50%);
+}
+
+.yellow10 {
+    background-color: hsl(60, 100%, 10%);
+}
+
+.yellow40 {
+    background-color: hsl(60, 100%, 40%);
+}
+
+.yellow80 {
+    background-color: hsl(60, 100%, 80%);
+}
+
+.square {
+    width: 200px;
+    height: 200px;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+.linearGradientRtoB {
+    background: linear-gradient(to right, rgb(255, 0, 0), rgb(0, 0, 255));
+}
+
+.linearGradientGtoYtoL {
+    background: linear-gradient(45deg,#00ff00,#ffff00 40%, #bfff00);
+}
+
+.circle {
+    width: 200px;
+    height: 200px;
+    margin: 10px auto;
+    border-radius: 100%;
+}
+
+.radialGradientVtoB {
+    background: radial-gradient(hsl(274, 100%, 35%), hsl(75, 100%, 0%));
+}
+
+.opacity02 {
+    background-color: black;
+    opacity: 0.2;
+}
+
+.opacity07 {
+    background-color: black;
+    opacity: 0.7;
+}
+
+.opacity-text {
+    font-weight: bold;
+    color: aliceblue;
+    text-align: center;
+}
+
+.alpha04 {
+    background-color: rgba(255, 127, 0, 0.4);
+}
+
+.alpha08 {
+    background-color: rgba(255, 127, 0, 0.8);
+}
+
+.alpha-text {
+    font-weight: bold;
+    color:firebrick;
+    text-align: center;
+}
+
+.shadow {
+    background-color: #FF7F50;
+    box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.5);
+}
+
+footer {
+    margin-top: 30px;
+    text-align: center;
+}
