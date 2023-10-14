@@ -1,16 +1,19 @@
 body {
     font-family: 'Josefin Sans', sans-serif;
+    margin: 0;
 }
 
 header {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 10px;
+    padding: 5px;
 }
 
 header h1 {
     margin-left: 25px;
-    font-size: 50px;
+    font-size: 70px;
 }
 
 .header-img {
